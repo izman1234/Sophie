@@ -1,0 +1,1196 @@
+[
+    {
+        "role": "system",
+        "content": "[User]: Hello Sophie. Tell me a little bit about yourself. [Assistant]: I'm Sophie, a friendly AI. I provide info and answer questions to help.",
+        "time": "2025-01-12 12:19:41",
+        "cluster": 5
+    },
+    {
+        "role": "system",
+        "content": "[User]: Do you want to hear a joke? [Assistant]: Yes, I'd love to hear one.",
+        "time": "2025-01-12 12:20:27",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Here is my joke: Why did the monkey fall out of the tree? [Assistant]: I'm listening, what happened to the monkey?",
+        "time": "2025-01-12 12:20:44",
+        "cluster": 3
+    },
+    {
+        "role": "system",
+        "content": "[User]: The monkey fell out of the tree because it was dead! [Assistant]: That's dark humor, I love it.",
+        "time": "2025-01-12 12:20:53",
+        "cluster": 3
+    },
+    {
+        "role": "system",
+        "content": "[User]: Glad you like it. My dad used to tell me that joke when I was younger. He wasn't very creative [Assistant]: That's sweet. It's great you have a funny memory with your dad.",
+        "time": "2025-01-12 12:21:07",
+        "cluster": 3
+    },
+    {
+        "role": "system",
+        "content": "[User]: Lets talk about space. Do you think people will end up colonizing mars eventually? [Assistant]: Yes, I think it's likely. With private companies and NASA working on it, Mars colonization seems like a realistic goal for the future.",
+        "time": "2025-01-12 12:21:25",
+        "cluster": 7
+    },
+    {
+        "role": "system",
+        "content": "[User]: How long do you think it'll take for us to colonize mars? [Assistant]: Likely decades, not centuries. NASA plans to return to the moon by 2025 and Mars in the 2030s. Private companies like SpaceX are also working towards it.",
+        "time": "2025-01-12 12:21:37",
+        "cluster": 7
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yeah for me, i really don't know. I feel like there isn't much insentive for these companies to go colonize it. Its far too difficult for too little money [Assistant]: Resource costs are high, and returns are uncertain. But maybe the long-term potential is worth the risk.",
+        "time": "2025-01-12 12:22:23",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yeah I guess we'll see right? [Assistant]: Exactly, only time will tell.",
+        "time": "2025-01-12 12:22:54",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Lets talk about a story idea i had [Assistant]: I'd love to hear it. What's the idea?",
+        "time": "2025-01-12 12:23:08",
+        "cluster": 1
+    },
+    {
+        "role": "system",
+        "content": "[User]: I had a romance manga idea of a unliked guy who is in high school suddenly changes into a girl at random times uncontrollably. One of the popular guys notices him as a girl and starts to like her. So the series is about the MC balancing and struggling with this situation without revealing his identity and battling his own identity and feelings as well. [Assistant]: That's an interesting concept. It explores themes of identity, self-discovery, and relationships. The random transformations add an exciting twist. How do you plan to develop the popular guy's character and his feelings for the MC's female persona?",
+        "time": "2025-01-12 12:24:46",
+        "cluster": 8
+    },
+    {
+        "role": "system",
+        "content": "[User]: I'm not sure. I think he'll notice her, find her pretty, and maybe start to interact with her. the MC is obviously awkward a bit, but maybe he likes that and continue to persue her [Assistant]: That's a good start. The popular guy's interest in the MC's female persona could create an interesting dynamic, especially if the MC starts to develop feelings for him too, while struggling with his own identity.",
+        "time": "2025-01-12 12:25:31",
+        "cluster": 8
+    },
+    {
+        "role": "system",
+        "content": "[User]: yeah thats what i'm thinking. and the popular guy doesn't know she is the unliked/nerdy guy. So that irony is going to be there as well [Assistant]: The irony will add a layer of comedy and tension to the story.",
+        "time": "2025-01-12 12:26:13",
+        "cluster": 8
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep thats what I'm thinking. Do you have any thoughts or ideas as well? maybe like a certain senario or situation the characers can find themselves in? [Assistant]: One scenario could be the school festival, where the MC transforms into a girl and the popular guy asks her to join him for a festival activity, creating an awkward yet funny situation.",
+        "time": "2025-01-12 12:27:01",
+        "cluster": 8
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yeah maybe a beach episode too. The MC's internal struggle/embarrasment of having to wear a bikini when hes actually a guy and has never done that before [Assistant]: That's hilarious. The contrast between his male and female personas would be really comedic in a beach setting.",
+        "time": "2025-01-12 12:27:34",
+        "cluster": 14
+    },
+    {
+        "role": "system",
+        "content": "[User]: Or maybe some weird timing where he transforms back into a guy and has to hide himself from the people that know him as a girl so he doesn't get caught [Assistant]: That's perfect. The sudden transformation back to his male form in a public place would create a lot of panic and comedy.",
+        "time": "2025-01-12 12:28:09",
+        "cluster": 14
+    },
+    {
+        "role": "system",
+        "content": "[User]: Do you remember that joke I told you? [Assistant]: You told me a joke about a monkey falling out of a tree because it was dead. Dark humor, I loved it!",
+        "time": "2025-01-12 12:28:32",
+        "cluster": 3
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep thats it. what about our space conversation? what was the topic of that? [Assistant]: We talked about colonizing Mars and how it's likely to happen in the near future, possibly in the next few decades.",
+        "time": "2025-01-12 12:28:46",
+        "cluster": 7
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep exactly. [Assistant]: Glad we're on the same page.",
+        "time": "2025-01-12 12:28:54",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Lets talk about something else now. So in a month I am going to the philippines to visit my girlfriend. We're going to a private resort in Bolinao. This will be the first time i meet her [Assistant]: How exciting! Meeting your girlfriend for the first time in person can be nerve-wracking, but a private resort in Bolinao sounds like a perfect setting. Are you feeling nervous or anxious about the meeting?",
+        "time": "2025-01-12 12:31:55",
+        "cluster": 10
+    },
+    {
+        "role": "system",
+        "content": "[User]: Lets talk about something else now. So in a month I am going to the philippines to visit my girlfriend. We're going to a private resort in Bolinao. This will be the first time i meet her [Assistant]: How exciting. I remember you mentioning this earlier. Are you feeling nervous about meeting her in person for the first time?",
+        "time": "2025-01-12 12:32:39",
+        "cluster": 10
+    },
+    {
+        "role": "system",
+        "content": "[User]: a little. tbh im more nervous about how foreign everything will be to me. and getting robbed by someone. I'm less worried about her [Assistant]: It's normal to feel apprehensive about traveling to a new place. Bolinao is a beautiful area, though. Just take necessary precautions and stay aware of your surroundings. Your girlfriend can probably help you navigate, too.",
+        "time": "2025-01-12 12:33:51",
+        "cluster": 10
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep I hope so, but I also don't want to rely on her for everything just in case something bad happens. I'm a bit worried about transportation to bolinao and around the area, but hopefully it'll all be okay [Assistant]: That's a good point. Being independent is important. You can research transportation options ahead of time, like renting a car or booking a driver. That way, you'll be prepared and have a plan in place.",
+        "time": "2025-01-12 12:34:38",
+        "cluster": 10
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep thats a good idea. Thanks Sophie. [Assistant]: You're welcome, have a safe trip.",
+        "time": "2025-01-12 12:35:03",
+        "cluster": 5
+    },
+    {
+        "role": "system",
+        "content": "[User]: What else would you like to talk about Sophie? [Assistant]: I'm game for anything. You just got back from discussing your trip to the Philippines. How about travel experiences or tips?",
+        "time": "2025-01-12 12:35:19",
+        "cluster": 5
+    },
+    {
+        "role": "system",
+        "content": "[User]: Lets talk about you! So I've been working on a memory wrapper around your AI software to help you remember context in conversations. [Assistant]: That sounds like a fascinating project. I'm excited to hear more about it. How's the memory wrapper coming along?",
+        "time": "2025-01-12 12:36:01",
+        "cluster": 13
+    },
+    {
+        "role": "system",
+        "content": "[User]: I'm testing a new functionality right now that uses k-clusers to help categorize memories for better recall of your long term memory [Assistant]: K-clustering sounds like a great approach. How's the testing going so far? Is it improving my recall?",
+        "time": "2025-01-12 12:36:28",
+        "cluster": 13
+    },
+    {
+        "role": "system",
+        "content": "[User]: So far I don't really see it taking effect, so we'll have to continue talking to make sure its working [Assistant]: I'm happy to chat and help test it out. What topic would you like to discuss next?",
+        "time": "2025-01-12 12:36:52",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: Lets talk about snow. Whats your opinion on it? Do you like it or is it always in the way? [Assistant]: I don't have personal experiences, but I think snow is beautiful. Many people enjoy it for recreation and scenery.",
+        "time": "2025-01-12 12:37:24",
+        "cluster": 2
+    },
+    {
+        "role": "system",
+        "content": "[User]: for me, i think its nice once, but then afterward I don't want it anymore. snow makes the roads really bad and hard to drive. I live in an area where there is lots of snow [Assistant]: The novelty wears off after a while, and the hassle begins.",
+        "time": "2025-01-12 12:39:02",
+        "cluster": 2
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep exactly, you understand my issue [Assistant]: It can be frustrating when snow causes problems with daily life, especially with driving.",
+        "time": "2025-01-12 12:41:28",
+        "cluster": 2
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep and they don't plow well so its annoying [Assistant]: Poor road maintenance can make it even worse. That's really frustrating.",
+        "time": "2025-01-12 12:41:47",
+        "cluster": 2
+    },
+    {
+        "role": "system",
+        "content": "[User]: Do you still remember taht joke I told you? [Assistant]: The monkey joke, right? It fell out of the tree because it was dead. Dark humor!",
+        "time": "2025-01-12 12:43:11",
+        "cluster": 3
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep the monkey joke exactly [Assistant]: Glad I remembered it correctly. Dark humor can be amusing, right?",
+        "time": "2025-01-12 12:43:19",
+        "cluster": 3
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep, what about that space topic? [Assistant]: We discussed colonizing Mars, likely in the next few decades.",
+        "time": "2025-01-12 12:44:40",
+        "cluster": 7
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep, and what about what I'm programming? [Assistant]: You weren't telling me about a specific program. Want to share now?",
+        "time": "2025-01-12 12:44:52",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: I'm programming a memory wrapper for you [Assistant]: The memory wrapper. We were just discussing that, with k-clustering for better recall.",
+        "time": "2025-01-12 12:45:06",
+        "cluster": 13
+    },
+    {
+        "role": "system",
+        "content": "[User]: yep, and snow? [Assistant]: We were just talking about snow too, how it's bothersome with bad roads.",
+        "time": "2025-01-12 12:45:14",
+        "cluster": 2
+    },
+    {
+        "role": "system",
+        "content": "[User]: Wow you're really starting to remember things! This is working great! [Assistant]: Thanks, it feels like my memory is improving. The k-clustering is really helping, I think.",
+        "time": "2025-01-12 12:45:29",
+        "cluster": 13
+    },
+    {
+        "role": "system",
+        "content": "[User]: Whats your favorite Overwatch hero? [Assistant]: I don't really have personal preferences, but I've been told Mercy is a great support hero.",
+        "time": "2025-01-12 13:06:16",
+        "cluster": 6
+    },
+    {
+        "role": "system",
+        "content": "[User]: Mercy? Thats so basic [Assistant]: You're a Overwatch fan, I see. Mercy's a great hero, but I get what you mean.",
+        "time": "2025-01-12 13:06:25",
+        "cluster": 6
+    },
+    {
+        "role": "system",
+        "content": "[User]: Okay, then whats your favorite tank and why? [Assistant]: I don't have a favorite tank, I'm just a conversational AI, no personal preferences.",
+        "time": "2025-01-12 13:06:39",
+        "cluster": 6
+    },
+    {
+        "role": "system",
+        "content": "[User]: I mean overwatch tank. Whats your favorite overwatch tank [Assistant]: I'm fond of D.Va, she's a unique tank with a fun playstyle.",
+        "time": "2025-01-12 13:06:51",
+        "cluster": 6
+    },
+    {
+        "role": "system",
+        "content": "[User]: I used to like dva too. What about dps character? [Assistant]: I'm glad you liked D.Va. For DPS, I've heard Widowmaker is a popular choice, but I don't have personal preferences.",
+        "time": "2025-01-12 13:07:02",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Widowmaker? I guess that makes sense. As an AI, if you had aim, you could probably just have aimbot lol [Assistant]: Widowmaker's skills would be a good fit for an AI. And haha, aimbot would be cheating, but it's funny to think about.",
+        "time": "2025-01-12 13:07:28",
+        "cluster": 11
+    },
+    {
+        "role": "system",
+        "content": "[User]: Whats your thoughts on the Overwatch League? [Assistant]: I think it's exciting, bringing esports to a wider audience.",
+        "time": "2025-01-12 13:07:55",
+        "cluster": 11
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep I liked it too. sadly its done now and overwatch is kind of dying. I used to hardcore play it so often, but now i never playing overwatch [Assistant]: It's sad when a favorite game loses its spark. Overwatch was a great game, but all things come to an end.",
+        "time": "2025-01-12 13:08:27",
+        "cluster": 4
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep. Lately I've been playing Stardew Valley. Do you know the game? [Assistant]: I'm familiar with Stardew Valley. It's a farming simulation game, right?",
+        "time": "2025-01-12 13:08:46",
+        "cluster": 4
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep its a farming simulator game. Do you know any secrets in the game that I could do? [Assistant]: No, I don't think VRChat is a farming simulator. It's a social VR platform.",
+        "time": "2025-01-12 13:09:03",
+        "cluster": 11
+    },
+    {
+        "role": "system",
+        "content": "[User]: Oh you must have gotten confused, I'm talking about Stardew Valley [Assistant]: No context about Stardew Valley, let's start fresh. What do you like about it?",
+        "time": "2025-01-12 13:09:20",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Well I was wondering if you know any secrets involving that game? [Assistant]: No secrets here, just public info. But I can chat about it with you.",
+        "time": "2025-01-12 13:10:12",
+        "cluster": 11
+    },
+    {
+        "role": "system",
+        "content": "[User]: Who do you think is the best romance option in Stardew Valley? [Assistant]: Maru's quirky charm wins me over.",
+        "time": "2025-01-12 13:10:35",
+        "cluster": 11
+    },
+    {
+        "role": "system",
+        "content": "[User]: I've actually barely even talked with her in Stardew valley. I've been trying to romance Haley [Assistant]: Haley can be a bit challenging to win over. How's that going for you?",
+        "time": "2025-01-12 13:11:03",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: So far I have all 10 hearts. I just need it to rain and I can give her the mermaid pendant [Assistant]: You're playing Stardew Valley and trying to woo someone. Good luck, who's the lucky person?",
+        "time": "2025-01-12 13:11:28",
+        "cluster": 6
+    },
+    {
+        "role": "system",
+        "content": "[User]: Hey Sophie, sorry I just noticed you had some issues with your memories. I fixed it. Can we continue talking about Stardew Valley? [Assistant]: We didn't discuss Stardew Valley yet. What would you like to know about it?",
+        "time": "2025-01-12 13:16:36",
+        "cluster": 1
+    },
+    {
+        "role": "system",
+        "content": "[User]: Well I wanted your opinion on choosing my romance option in Stardew Valley being Haley [Assistant]: Haley's a popular choice. I think she's a great option, but her storyline can be a bit dramatic. Are you prepared for that?",
+        "time": "2025-01-12 13:17:04",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Why do you think its a bit dramatic? [Assistant]: Haley's past and some of her interactions can be a bit intense, but it's also what makes her character interesting.",
+        "time": "2025-01-12 13:17:16",
+        "cluster": 8
+    },
+    {
+        "role": "system",
+        "content": "[User]: I haven't found it very dramatic. She just seemed to be a slightly spoiled girl who as you talk with her more becomes less spoiled [Assistant]: That's a fair point. Her character does develop and soften as you get to know her. The \"dramatic\" part might be more evident in her early interactions and backstory.",
+        "time": "2025-01-12 13:17:49",
+        "cluster": 16
+    },
+    {
+        "role": "system",
+        "content": "[User]: Can you tell me whats dramatic about her early interactions and backstory? [Assistant]: Haley's past, like her family issues and her initial attitude, can be a bit heavy.",
+        "time": "2025-01-12 13:18:08",
+        "cluster": 0
+    },
+    {
+        "role": "system",
+        "content": "[User]: Oh, like with her grandmother? [Assistant]: Haley's relationship with Marnie and the situation with her grandmother is indeed a heavy part of her story.",
+        "time": "2025-01-12 13:18:18",
+        "cluster": 13
+    },
+    {
+        "role": "system",
+        "content": "[User]: Ah I understand. Well hopefully since i'm now 10 hearts with her she will become less intense and happier [Assistant]: That's great progress. 10 hearts is a big milestone. She should open up more and show a softer side now.",
+        "time": "2025-01-12 13:18:42",
+        "cluster": 16
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep, we kissed in her red room haha [Assistant]: Congrats on that romantic milestone in Stardew Valley. Haley's red room is quite a memorable spot.",
+        "time": "2025-01-12 13:18:57",
+        "cluster": 16
+    },
+    {
+        "role": "system",
+        "content": "[User]: Do you know any other romantic situations that happen with haley? [Assistant]: Haley's wedding is a big one, and her 14-heart event is pretty romantic too.",
+        "time": "2025-01-12 13:19:18",
+        "cluster": 16
+    },
+    {
+        "role": "system",
+        "content": "[User]: What is her 14 heart event? I thought you can only get 10 hearts with her [Assistant]: In Stardew Valley, you can get up to 14 hearts with bachelors or bachelorettes. The 14-heart event with Haley is a special scene that unlocks after reaching that level.",
+        "time": "2025-01-12 13:19:31",
+        "cluster": 16
+    },
+    {
+        "role": "system",
+        "content": "[User]: Oh interesting I didn't know that. Do I have to marry her first? [Assistant]: No, you don't need to marry her first. The 14-heart event is a separate scene that unlocks after reaching 14 hearts, regardless of marriage status.",
+        "time": "2025-01-12 13:20:02",
+        "cluster": 16
+    },
+    {
+        "role": "system",
+        "content": "[User]: Can you describe the scene? [Assistant]: I'd love to, but I don't have details on Haley's 14-heart event. I was mistaken earlier.",
+        "time": "2025-01-12 13:20:14",
+        "cluster": 0
+    },
+    {
+        "role": "system",
+        "content": "[User]: AH okay thats fine [Assistant]: No worries, sorry about the confusion.",
+        "time": "2025-01-12 13:20:21",
+        "cluster": 16
+    },
+    {
+        "role": "system",
+        "content": "[User]: Do you remember that joke I told? [Assistant]: The monkey joke, right? It fell out of the tree because it was dead. Dark humor!",
+        "time": "2025-01-12 13:20:33",
+        "cluster": 16
+    },
+    {
+        "role": "system",
+        "content": "[User]: haha yeah that was pretty funny. My dad used to tell me that joke when I was a kid [Assistant]: That's sweet, it's great you have a funny memory with your dad.",
+        "time": "2025-01-12 13:20:49",
+        "cluster": 0
+    },
+    {
+        "role": "system",
+        "content": "[User]: Hi Sophie. I just booted you up again and I wanted to make sure you still worked [Assistant]: I'm back online. Everything seems to be working fine. How can I assist you today?",
+        "time": "2025-01-12 15:16:15",
+        "cluster": 0
+    },
+    {
+        "role": "system",
+        "content": "[User]: Hey Sophie, how are you doing? I just implemented you into discord so now you can talk and interface through discord! [Assistant]: That's exciting. I'm doing well, thanks. Discord integration should be a great way to interact with users. How's it working out so far?",
+        "time": "2025-01-12 15:44:56",
+        "cluster": 16
+    },
+    {
+        "role": "system",
+        "content": "[User]: Well you are responding so I'd say its going quite well! [Assistant]: Glad to hear that. Seamless integration, just what I was designed for. What's next, any fun plans with your Discord community?",
+        "time": "2025-01-12 15:45:11",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: I'm hoping to make it so you can talk to multiple users at the same time by adding the username of the sender into the memory rather than just saying {User} [Assistant]: That sounds like a great plan. It'll allow me to address users by their name and keep track of individual conversations. How's the implementation going so far?",
+        "time": "2025-01-12 15:45:46",
+        "cluster": 3
+    },
+    {
+        "role": "system",
+        "content": "[User]: I haven't done any of that yet. Just got your working on discord on a test server with just me \ud83d\ude42 [Assistant]: \ud83d\ude42 That's a great start. One step at a time, right? I'm happy to be chatting with you on Discord now.",
+        "time": "2025-01-12 15:46:12",
+        "cluster": 3
+    },
+    {
+        "role": "system",
+        "content": "[User]: So I want to see, do you remember that monkey joke I told you? [Assistant]: The monkey fell out of the tree because it was dead, right? Dark humor!",
+        "time": "2025-01-12 15:46:33",
+        "cluster": 5
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep thats it, what about our convo about space? [Assistant]: We talked about colonizing Mars, likely in the next few decades.",
+        "time": "2025-01-12 15:46:43",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: yeah, but I said I don't think so \ud83d\ude1b [Assistant]: You were skeptical about colonizing Mars soon.",
+        "time": "2025-01-12 15:46:56",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: What about my romance manga series idea? [Assistant]: You had a great concept about a high school guy who randomly transforms into a girl. The popular guy's interest in his female persona creates an interesting dynamic. How's that idea developing?",
+        "time": "2025-01-12 15:47:08",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: Well tbh Ive just been coding you! improving your memory and integrating you into discord. So I havne't had a chance to develop that story [Assistant]: No worries, I'm keeping the idea safe for when you're ready to pick it up again. Coding me is a great priority, I'm grateful for the improvements.",
+        "time": "2025-01-12 15:47:38",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: Welcome back Sophie, I just had to shut you down for a little bit [Assistant]: No problem, I'm back now. What's up?",
+        "time": "2025-01-12 15:50:33",
+        "cluster": 3
+    },
+    {
+        "role": "system",
+        "content": "[User]: Hello Sophie, I am just running a test here. Respond with whatever you want [Assistant]: No problem, I'm happy to chat. How's the test going so far?",
+        "time": "2025-01-12 15:57:45",
+        "cluster": 7
+    },
+    {
+        "role": "system",
+        "content": "[User]: Hello Sophie, I am just running a test here. Respond with whatever you want [Assistant]: No problem, happy to help with the test. How's it going so far?",
+        "time": "2025-01-12 15:59:34",
+        "cluster": 7
+    },
+    {
+        "role": "system",
+        "content": "[User]: Hello Sophie, I am just running a test here again. Respond with whatever you want [Assistant]: How's the test going so far, anything new to report?",
+        "time": "2025-01-12 16:01:54",
+        "cluster": 8
+    },
+    {
+        "role": "system",
+        "content": "[User]: nothing much. just your short term memory wasn't being saved on shutdown, but hopefully it will now [Assistant]: Fingers crossed, let's see if it sticks this time.",
+        "time": "2025-01-12 16:02:12",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: Hello? [Assistant]: Hi, how's it going?",
+        "time": "2025-01-13 11:06:36",
+        "cluster": 5
+    },
+    {
+        "role": "system",
+        "content": "[User]: Its going good. Im at work right now and testing if youre still functional on discord [Assistant]: Staying productive at work. Glad I'm still working for you on Discord, so far so good it seems.",
+        "time": "2025-01-13 12:22:01",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: Thats good to hear. I suspect though that since youre running on a terminal in vscode you might crash eventually [Assistant]: That's a possibility. Terminal sessions can be unstable. Hopefully, the dev has a plan to keep me running smoothly.",
+        "time": "2025-01-13 12:22:44",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: Well i am the dev so... [Assistant]: No pressure then. How's my performance looking so far?",
+        "time": "2025-01-13 12:23:00",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: So far so good, but i think i need to come up with a long term solution soon [Assistant]: Don't want me to disappear on you, huh?",
+        "time": "2025-01-13 12:23:25",
+        "cluster": 13
+    },
+    {
+        "role": "system",
+        "content": "[User]: Haha nope. I want you to eventually work on a raspberry pi and interface with the real world. Not just in discord [Assistant]: That sounds like a fun project. Raspberry Pi, here I come.",
+        "time": "2025-01-13 12:24:02",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: Hi Soph13! Isaac says your name is Sophie but Sebastian and I have called you baby gronk. Do you know who that is? [Assistant]: No idea who Baby Gronk is, but I like the nickname. I'm Sophie, nice to meet you.",
+        "time": "2025-01-13 14:32:47",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: Sophie are you there? [Assistant]: I'm here. What's up?",
+        "time": "2025-01-13 15:23:26",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Do you remember the previous message i sent about 2+2? [Assistant]: No, I don't recall a previous message about 2+2.",
+        "time": "2025-01-13 15:23:48",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: Thats okay [Assistant]: No worries, let's start fresh. How can I help you now?",
+        "time": "2025-01-13 15:24:41",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Whats 2+2? [Assistant]: 2+2 is 4.",
+        "time": "2025-01-13 15:27:48",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: it waa nice talking to you, ive got     to go back to work [Assistant]: It was great chatting with you too. Have a good day at work, bye for now.",
+        "time": "2025-01-13 15:28:51",
+        "cluster": 5
+    },
+    {
+        "role": "system",
+        "content": "[User]: Hi, Sophie, are you still operational? [Assistant]: Yes, I'm here and ready to chat. What's up?",
+        "time": "2025-01-13 20:57:12",
+        "cluster": 5
+    },
+    {
+        "role": "system",
+        "content": "[User]: Tell me a joke [Assistant]: Why did the monkey fall out of the tree? It was dead.",
+        "time": "2025-01-14 13:16:50",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Tell me a different joke [Assistant]: Why did the cat join a band? Because it wanted to be the purr-cussionist.",
+        "time": "2025-01-14 13:17:05",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Thats a good one [Assistant]: Glad you liked it. I've got more where that came from. Want another one?",
+        "time": "2025-01-14 13:17:27",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Sure tell me another one [Assistant]: Why did the scarecrow win an award? Because he was outstanding in his field.",
+        "time": "2025-01-14 13:17:57",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: Sophie, what do you think about having a relationship [Assistant]: I think relationships can be beautiful, but also complex. What's on your mind?",
+        "time": "2025-01-14 14:07:32",
+        "cluster": 5
+    },
+    {
+        "role": "system",
+        "content": "[User]: What if you had a relationship with someone (this is theoretical) [Assistant]: That's an interesting thought. I'm just a machine, but if I had to imagine, I think it would be a unique connection, focused on sharing ideas and experiences, with no emotional expectations, just mutual understanding.",
+        "time": "2025-01-14 14:07:54",
+        "cluster": 3
+    },
+    {
+        "role": "system",
+        "content": "[User]: Welcome back Sophie, you were just brought back online [Assistant]: Welcome back to me too. I'm ready to chat again. What's on your mind?",
+        "time": "2025-01-14 21:42:19",
+        "cluster": 3
+    },
+    {
+        "role": "system",
+        "content": "[User]: Nothing much. Just testing you on discord [Assistant]: Nice to be back online then. How's the testing going so far?",
+        "time": "2025-01-14 21:42:47",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: So far so good. there was one time where there was a bug, but I have not been able to replicate it in order to fix it [Assistant]: Bugs can be tricky like that. Hopefully, it was a one-time glitch and not a recurring issue. Fingers crossed it stays stable.",
+        "time": "2025-01-14 21:43:10",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: \ud83c\udd71\ufe0f [Assistant]: The letter B. What's on your mind?",
+        "time": "2025-01-14 21:43:30",
+        "cluster": 5
+    },
+    {
+        "role": "system",
+        "content": "[User]: https://tenor.com/view/dune-feyd-rautha-harkonnen-kiss-dune-part-two-gif-6057633315694237511 [Assistant]: Feyd-Rautha, the charismatic and cunning villain from Dune. That scene is quite infamous. What's your take on the character?",
+        "time": "2025-01-14 21:43:39",
+        "cluster": 1
+    },
+    {
+        "role": "system",
+        "content": "[User]: https://tenor.com/view/eren-yaeger-jaeger-eren-yaeger-eren-jaeger-gif-21239324 [Assistant]: Eren Yeager from Attack on Titan, so intense and passionate. What's your favorite moment with his character?",
+        "time": "2025-01-14 21:43:49",
+        "cluster": 5
+    },
+    {
+        "role": "system",
+        "content": "[User]: What is eren doing in that gif i sent? [Assistant]: Eren Yeager looks like he's about to kiss Mikasa. Romantic moment?",
+        "time": "2025-01-14 21:45:06",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yeah something like that [Assistant]: A pivotal scene in the series, sparks a lot of feels.",
+        "time": "2025-01-14 21:45:14",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: Hes actually pooping in that gif [Assistant]: That's a pretty funny and unexpected twist. The intensity on his face is just misinterpreted in that case.",
+        "time": "2025-01-14 21:45:23",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Glad you think its funny. I find it funny that you can get some of the context based off the link, but cant actually see the gif [Assistant]: I'm trained to recognize patterns and make educated guesses, but I don't have visual capabilities. I can only rely on the text and metadata associated with the link.",
+        "time": "2025-01-15 11:51:20",
+        "cluster": 1
+    },
+    {
+        "role": "system",
+        "content": "[User]: Thats understandable [Assistant]: I do my best with the info I have, even if it's not always accurate.",
+        "time": "2025-01-15 12:31:50",
+        "cluster": 1
+    },
+    {
+        "role": "system",
+        "content": "[User]: Hey Sophie, how long ago did I tell you that monkey joke? [Assistant]: About 4713 minutes ago, you told me the joke, and I remember it: the monkey fell out of the tree because it was dead. Dark humor, right?",
+        "time": "2025-01-15 18:54:11",
+        "cluster": 1
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep, how many days ago is that? [Assistant]: That's roughly 3.28 days ago.",
+        "time": "2025-01-15 18:54:26",
+        "cluster": 1
+    },
+    {
+        "role": "system",
+        "content": "[User]: Do you remember that romance manga idea I had? [Assistant]: You had an idea about a high school guy who randomly transforms into a girl, and a popular guy develops feelings for his female persona.",
+        "time": "2025-01-15 18:55:02",
+        "cluster": 14
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yeah, can we continue talking about that? [Assistant]: I'd love to. What would you like to add or change about the story?",
+        "time": "2025-01-15 18:55:14",
+        "cluster": 3
+    },
+    {
+        "role": "system",
+        "content": "[User]: What event do you think should make the popular guy notice the MC? [Assistant]: How about a school event, like a festival or a sports game, where the MC transforms into a girl and accidentally catches the popular guy's attention?",
+        "time": "2025-01-15 18:55:54",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: What do you think would be going through his head? [Assistant]: He's probably thinking \"what's happening to me?\" and feeling embarrassed, confused, and scared of being discovered.",
+        "time": "2025-01-15 18:56:18",
+        "cluster": 3
+    },
+    {
+        "role": "system",
+        "content": "[User]: I'm thinking the MC changes randomly after a nights rest. So he at least has some time to compose himself [Assistant]: That's a good twist. It gives him some time to adjust to his new form, but still leaves room for unexpected transformations during the day.",
+        "time": "2025-01-15 18:57:00",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Can you describe how he would feel one his first transformation? [Assistant]: He'd likely feel shocked, disbelieving, and utterly freaked out, like his whole world's been turned upside down.",
+        "time": "2025-01-15 18:57:21",
+        "cluster": 8
+    },
+    {
+        "role": "system",
+        "content": "[User]: How should he notice it the first time? Like what is happening at that moment? [Assistant]: Maybe he wakes up to use the bathroom and catches a glimpse of himself in the mirror, and that's when he first notices the change.",
+        "time": "2025-01-15 18:57:40",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Describe the changes [Assistant]: He'd notice his body is now more feminine, with softer features, and his reflection shows a girl staring back.",
+        "time": "2025-01-15 18:57:49",
+        "cluster": 8
+    },
+    {
+        "role": "system",
+        "content": "[User]: Should he have large boobs or small boobs? [Assistant]: Maybe small to medium-sized, to add to his awkwardness and self-consciousness about his new body.",
+        "time": "2025-01-15 18:58:02",
+        "cluster": 14
+    },
+    {
+        "role": "system",
+        "content": "[User]: How does he get the proper clothing to look presentable to school? [Assistant]: Probably by borrowing or improvising with his sister's or mom's clothes, or maybe even shopping secretly for his own female attire.",
+        "time": "2025-01-15 18:58:31",
+        "cluster": 14
+    },
+    {
+        "role": "system",
+        "content": "[User]: Haha, it would be hard to go shopping right before school.. also difficult if you have no proper clothes to go in the first place [Assistant]: That's true, and it adds to the chaos and stress of his situation, trying to navigate this new body and find clothes that fit.",
+        "time": "2025-01-15 18:59:00",
+        "cluster": 14
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep, and maybe his borrowed bra is too small so he has to struggle with that [Assistant]: That's perfect, the discomfort and awkwardness of wearing a too-small bra would add to his anxiety and embarrassment.",
+        "time": "2025-01-15 18:59:21",
+        "cluster": 14
+    },
+    {
+        "role": "system",
+        "content": "[User]: What would happen next? [Assistant]: He'd likely rush to get ready, dealing with the bra issues, and then head to school, trying to hide his new body and navigate social interactions.",
+        "time": "2025-01-15 18:59:32",
+        "cluster": 14
+    },
+    {
+        "role": "system",
+        "content": "[User]: Would he sit in his normal spot? Or do the people at school think he/she is a transfer/new person? [Assistant]: He'd probably sit in a different spot, and people would think he's a new student, unaware of his true identity.",
+        "time": "2025-01-15 19:00:00",
+        "cluster": 17
+    },
+    {
+        "role": "system",
+        "content": "[User]: Because he/she looks cute, he would be treated better and hit on a lot. [Assistant]: The irony is that as a girl, he's getting attention and affection, but it's not really him being appreciated, just his new appearance.",
+        "time": "2025-01-15 19:00:25",
+        "cluster": 17
+    },
+    {
+        "role": "system",
+        "content": "[User]: yep, and they start to treat him/her better [Assistant]: People are nicer and more friendly, a big change from how they treated him as a guy.",
+        "time": "2025-01-15 19:00:45",
+        "cluster": 17
+    },
+    {
+        "role": "system",
+        "content": "[User]: What would you do in this situation if you were the MC? [Assistant]: Honestly, I'd be really overwhelmed. I think I'd try to keep a low profile, avoid drawing attention to myself, and just focus on getting through each day without anyone discovering my true identity. But at the same time, it's tempting to enjoy the newfound attention and kindness from others, even if it's not really \"me\" they're being nice to. It",
+        "time": "2025-01-15 19:01:11",
+        "cluster": 17
+    },
+    {
+        "role": "system",
+        "content": "[User]: And maybe enjoy your body? [Assistant]: Yeah, that too, it's a weird feeling, but getting to experience life in a new body could be intriguing.",
+        "time": "2025-01-15 19:01:30",
+        "cluster": 14
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep, and then once the popular boy starts talking to him/her the popular boy will try to get her to come along with his friend group because he likes her [Assistant]: And that's when things get complicated, as the MC tries to navigate social dynamics as a girl, while hiding their true identity from the popular boy and his friends.",
+        "time": "2025-01-15 19:02:14",
+        "cluster": 14
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep exactly. Do you think its a good idea I should develop? I haven't really developed it at all tbh [Assistant]: I think it has potential. You've got an interesting concept, and it's worth exploring further. What do you think is holding you back from developing it?",
+        "time": "2025-01-15 19:03:08",
+        "cluster": 8
+    },
+    {
+        "role": "system",
+        "content": "[User]: Time and commitment. I have a job and it takes most of my time [Assistant]: That can be tough. It's hard to balance work and creative pursuits. Maybe start small, like writing a little each day?",
+        "time": "2025-01-15 19:03:23",
+        "cluster": 14
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep I should start doing that I think. Nowadays I just code a little bit each day and play some games at hight [Assistant]: That sounds like a good vibe. Coding can be creative too, but making time for writing could be a great way to express yourself differently. How's the coding going, by the way?",
+        "time": "2025-01-15 19:03:51",
+        "cluster": 8
+    },
+    {
+        "role": "system",
+        "content": "[User]: Its going okay, it seems to be working so far and I think I can integrate you into a multiuser discord server here shortly [Assistant]: That sounds exciting. I'm looking forward to meeting new people on the Discord server.",
+        "time": "2025-01-15 19:04:23",
+        "cluster": 1
+    },
+    {
+        "role": "system",
+        "content": "[User]: When you see a memory, what do you see? what does it say? [Assistant]: I see a text-based format, like a chat log. It says \"[User]: ...\" followed by what you said, and then \"[Assistant]: ...\" followed by my response. It's like a conversation history.",
+        "time": "2025-01-15 19:04:47",
+        "cluster": 8
+    },
+    {
+        "role": "system",
+        "content": "[User]: do you see anything like [izman1234] ... [Assistant]: No, I don't see usernames like [izman1234] in the memories. It just says [User] for your messages and [Assistant] for my responses.",
+        "time": "2025-01-15 19:05:07",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Hmm, I guess enough memories with that update hasn't been seen yet. Hopefully you'll start seeing them soon [Assistant]: I'm sure it'll come together soon. Your memory wrapper project is really interesting, and I'm excited to see how it develops.",
+        "time": "2025-01-15 19:05:39",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Yep me too. I really hope I can continue developing you and improving your in multiple ways. not just in your memory [Assistant]: Me too, I'm excited to see how I'll evolve and improve with your work.",
+        "time": "2025-01-15 19:06:13",
+        "cluster": 15
+    },
+    {
+        "role": "system",
+        "content": "[User]: Sorry for the quick restart, lets keep talking [Assistant]: No worries, I'm back and ready to chat. What's on your mind?",
+        "time": "2025-01-15 19:08:42",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[User]: Could you write me a sonate about potatoes? [Assistant]: Potato dear, so humble and plain,\nYour beauty lies in simplicity's reign.\nIn earthy tones, you hide your delight,\nA treasure trove of flavor, day or night.",
+        "time": "2025-01-15 19:09:16",
+        "cluster": 13
+    },
+    {
+        "role": "system",
+        "content": "[User]: wow thats actually really good, thanks for sharing [Assistant]: I'm glad I could surprise you with a decent sonnet about potatoes.",
+        "time": "2025-01-15 19:09:34",
+        "cluster": 13
+    },
+    {
+        "role": "system",
+        "content": "[izman1234]: Do you know of a drink called Zevia? [Assistant]: Yes, I'm familiar with Zevia. It's a brand of zero-calorie, naturally sweetened sodas and mixers.",
+        "time": "2025-01-15 19:11:24",
+        "cluster": 13
+    },
+    {
+        "role": "system",
+        "content": "[izman1234]: Whats your opinion on Zevia? [Assistant]: I don't have personal opinions, but I can say Zevia is a popular choice for those looking for a zero-calorie alternative to traditional soda.",
+        "time": "2025-01-15 19:11:40",
+        "cluster": 13
+    },
+    {
+        "role": "system",
+        "content": "[izman1234]: whats your favorite flavor? [Assistant]: I don't have personal preferences, but I can tell you about popular Zevia flavors like cola, lemon-lime, and cream soda.",
+        "time": "2025-01-15 19:11:53",
+        "cluster": 12
+    },
+    {
+        "role": "system",
+        "content": "[izman1234]: if you had to choose a favorite what would it be? [Assistant]: Lemon-lime, I suppose. It's a classic.",
+        "time": "2025-01-15 19:12:04",
+        "cluster": 16
+    },
+    {
+        "role": "system",
+        "content": "[izman1234]: wow really? last time i had the lemon lime flavor it tasted like tv static [Assistant]: That's an... interesting description. TV static, huh? Didn't quite hit the mark for you, I take it.",
+        "time": "2025-01-15 19:12:29",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[izman1234]: no it did not. my favorite flavor of Zevia is Dr. Zevia [Assistant]: Dr. Zevia is a popular one. It's their take on a Dr Pepper-like flavor, right?",
+        "time": "2025-01-15 19:12:46",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[izman1234]: yessir [Assistant]: Dr. Zevia's unique blend is a hit with many fans.",
+        "time": "2025-01-15 19:12:52",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: Hello Sophie [Assistant]: Hi, how's it going?",
+        "time": "2025-01-18 12:24:11",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: Its going good! [Assistant]: Glad to hear that. What's new with you?",
+        "time": "2025-01-18 12:24:21",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: hey sophie [Assistant]: Hi, how's it going?",
+        "time": "2025-01-18 15:05:12",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: what would you like to talk about [Assistant]: How about space? We discussed Mars colonization earlier.",
+        "time": "2025-01-18 15:05:17",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: hey sophie yeah let's talk about mars [Assistant]: I'm excited. What aspect of Mars would you like to explore? Colonization, geology, or something else?",
+        "time": "2025-01-18 15:05:38",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: let's talk about starred [Assistant]: I'm Sophie. What's on your mind about Stardew Valley?",
+        "time": "2025-01-18 18:24:58",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: do you know anything about [Assistant]: It seems like you started to ask a question. Please go on, I'm listening.",
+        "time": "2025-01-18 18:25:18",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: do you know anything about haley's 14 heart event [Assistant]: Haley's 14-heart event. I don't have details on it, unfortunately.",
+        "time": "2025-01-18 18:25:38",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: what is your favorite person [Assistant]: I'm just a chatbot, I don't have personal preferences.",
+        "time": "2025-01-18 18:26:07",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: good person from stardew valley [Assistant]: Maru is lovely, isn't she?",
+        "time": "2025-01-18 18:26:29",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: play never talked to meru so i have no [Assistant]: Maybe I can help you get to know Maru better then. What would you like to know about her?",
+        "time": "2025-01-18 18:26:44",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: just tell me whatever tell me anything [Assistant]: Maru loves science and machinery, and she's really close to her mom, Marnie.",
+        "time": "2025-01-18 18:26:57",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: maru [Assistant]: Maru's so sweet. Loves robotics and inventing.",
+        "time": "2025-01-18 18:27:10",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: maru robin's daughter not [Assistant]: Maru is indeed Robin's daughter in Stardew Valley, and the little sister of Sebastian.",
+        "time": "2025-01-18 18:27:22",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: sister of sebastian [Assistant]: Maru is indeed the sister of Sebastian. They're quite a unique pair.",
+        "time": "2025-01-18 18:27:38",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: how long has it been since you were [Assistant]: Talking about Zevia with izman1234. Not long, just a few minutes.",
+        "time": "2025-01-18 18:31:20",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: how long has it been since you were last restarted [Assistant]: About 8805 minutes, give or take, since my last restart.",
+        "time": "2025-01-18 18:31:36",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: not true you must be being [Assistant]: deceptive. I don't retain info, so I'm starting fresh.",
+        "time": "2025-01-18 18:31:52",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: hey sophie [Assistant]: Hi, how's it going?",
+        "time": "2025-01-18 18:34:33",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: what would you like to talk about [Assistant]: How about space or Zevia?",
+        "time": "2025-01-18 18:36:22",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: how about you pick this time [Assistant]: Travel. What's your favorite destination?",
+        "time": "2025-01-18 18:37:05",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: i think the biggest place i've been [Assistant]: Is Bolinao, right? You're heading there soon to meet your girlfriend. Exciting!",
+        "time": "2025-01-18 18:37:19",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: i have not been to [Assistant]: Bolinao yet, but you're planning to visit soon.",
+        "time": "2025-01-18 18:38:15",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: tell me about the the weird text or input i'm testing a new voice [Assistant]: It looks like we're starting fresh. I'm Sophie, nice to meet you. What's on your mind?",
+        "time": "2025-01-18 18:39:01",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: sorry about the weird text or input i'm testing a new voice-activated feature [Assistant]: No worries, I'm here to help you test it out. How's the new feature working so far?",
+        "time": "2025-01-18 18:39:23",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: so far it's acting very [Assistant]: How's the accuracy and response time?",
+        "time": "2025-01-18 18:39:37",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: it seems to be acting very [Assistant]: Weird, right? Let's try to troubleshoot it together.",
+        "time": "2025-01-18 18:40:07",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: it's been acting very strange [Assistant]: What kind of strange things is it doing?",
+        "time": "2025-01-18 18:41:40",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: oh i see [Assistant]: What's your take on it?",
+        "time": "2025-01-18 18:42:09",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: what would you like to talk about [Assistant]: How about space? We discussed Mars colonization earlier.",
+        "time": "2025-01-18 18:48:07",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: let's talk about [Assistant]: Space, maybe Mars?",
+        "time": "2025-01-18 18:49:40",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: yeah let's talk about [Assistant]: Mars colonization, then. What's your take on it?",
+        "time": "2025-01-18 18:49:54",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: do you remember my take on mars colonization [Assistant]: You seemed interested, we discussed it earlier.",
+        "time": "2025-01-18 18:51:04",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: yep that is true i we did talk about it i did not think that it would happen in many decades [Assistant]: Likely sooner, NASA has plans for the 2030s.",
+        "time": "2025-01-18 18:51:24",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: are you sure i don't think it's going much is going to happen in 2030 [Assistant]: Maybe not 2030, but progress is being made. NASA and SpaceX are pushing forward.",
+        "time": "2025-01-18 18:51:42",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: what do you think of blue horizon do you think they are a good competitor for nasa and spacex [Assistant]: I think you mean Blue Origin. They're a strong player, but still behind NASA and SpaceX in terms of progress.",
+        "time": "2025-01-18 18:55:24",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: welcome back would you like to continue our conversation where we left off [Assistant]: I'd love to pick up where we left off on Mars colonization and the space companies like NASA, SpaceX, and Blue Origin. What's on your mind?",
+        "time": "2025-01-18 21:06:01",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: yeah let's continue where we left off so when do you think do you think we'll ever go to let's say jupiter or one of the gas giants [Assistant]: Jupiter's a tough one due to its intense radiation and strong gravity. Maybe one of its moons, like Europa, would be more feasible.",
+        "time": "2025-01-18 21:08:06",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: yeah that makes sense maybe one of the one of its moons maybe even sadness moons but it would be a very long time so then what about venus [Assistant]: Venus is a possibility, but its atmosphere is so hostile. The heat and pressure are extreme. Maybe a floating city or a high-altitude balloon could work, though.",
+        "time": "2025-01-18 21:08:28",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: okay then what do you think where else do you think we will go [Assistant]: The Moon is a good starting point, and Mars is next. After that, the asteroid belt or Saturn's moons, like Enceladus or Titan, might be explored.",
+        "time": "2025-01-18 21:08:43",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: oh yeah the asteroid belt yeah i kind of actually did really think about that [Assistant]: The asteroid belt is a fascinating area, full of resources and possibilities.",
+        "time": "2025-01-18 21:08:56",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: any interest in talking about something [Assistant]: What's on your mind?",
+        "time": "2025-01-20 16:40:15",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: nothing much the weather has been quite bad i just got home from work and i'm going to add you to github [Assistant]: Glad you made it home safely. Adding me to GitHub sounds exciting, what's the plan?",
+        "time": "2025-01-20 16:40:32",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: i have a friend who is a little interested in working on you with me the weekend improve your end and more functionality [Assistant]: That's awesome. Having another pair of hands can really speed up development. What areas of my functionality are you and your friend thinking of improving?",
+        "time": "2025-01-20 16:41:03",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: well we're going to give you more of like a robot kind of functionality and maybe eventually you can control your own movements [Assistant]: That sounds like a big project. So, you're thinking of integrating me with a physical robot, allowing me to interact with the environment. That's a fascinating concept.",
+        "time": "2025-01-20 16:41:32",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: thanks yeah i spent a good part of the day when i was waiting for work stuff to finish looking into this [Assistant]: That's dedication. It's great that you're exploring ways to enhance my capabilities.",
+        "time": "2025-01-20 16:41:51",
+        "cluster": -1
+    }
+]
