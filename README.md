@@ -98,6 +98,10 @@ Contributions are welcome! Please follow these steps:
 2. Create a new branch for your feature or bug fix.
 3. Submit a pull request with detailed explanations.
 
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
 ## Contact
 
 For questions or support, open an issue on GitHub or contact the repository owner.
