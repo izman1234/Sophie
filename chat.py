@@ -175,12 +175,11 @@ class ChatModel():
             with open(sound_file, "wb") as f:
                 f.write(data)
         
-        if(text != None):
-            try:
-                playsound(sound_file)
-                os.remove(sound_file)
-            except FileNotFoundError:
-                print("File not found.")
+        try:
+            playsound(sound_file)
+            os.remove(sound_file)
+        except FileNotFoundError:
+            print("File not found.")
     
     async def record_audio(self, wake_word="hey sophie", output_file="recorded_audio.wav"):
         recognizer = sr.Recognizer()
