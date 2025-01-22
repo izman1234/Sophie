@@ -5,10 +5,6 @@
     },
     {
         "role": "system",
-        "content": "This is a recent memory: [User]: oh yeah the asteroid belt yeah i kind of actually did really think about that [Assistant]: The asteroid belt is a fascinating area, full of resources and possibilities."
-    },
-    {
-        "role": "system",
         "content": "This is a recent memory: [User]: any interest in talking about something [Assistant]: What's on your mind?"
     },
     {
@@ -26,5 +22,9 @@
     {
         "role": "system",
         "content": "This is a recent memory: [User]: thanks yeah i spent a good part of the day when i was waiting for work stuff to finish looking into this [Assistant]: That's dedication. It's great that you're exploring ways to enhance my capabilities."
+    },
+    {
+        "role": "system",
+        "content": "This is a recent memory: [User]: welcome back you've been asleep for a while what would you like to talk about [Assistant]: Thanks for the welcome back. I'm feeling refreshed. What's new with you?"
     }
 ]

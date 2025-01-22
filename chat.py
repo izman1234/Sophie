@@ -3,6 +3,7 @@ from memory_manager import MemoryManager
 from PyCharacterAI import get_client
 from playsound import playsound
 import speech_recognition as sr
+from cartesia import Cartesia
 from groq import Groq
 import numpy as np
 import datetime
@@ -29,11 +30,13 @@ class ChatModel():
         self.greeting_message = None
         self.audio_state = "LISTEN_FOR_KEYWORD"
         self.audio_frames = []
+        self.speech_client = None
 
     @classmethod
     async def create(cls, model_name, AI_name, using_discord):
         self = cls(model_name, AI_name, using_discord)
         self.memory_manager = MemoryManager(model_name)
+        self.speech_client = Cartesia(api_key=os.environ.get("CARTESIA_KEY"))
         self.last_boot_timestamp = self.memory_manager.get_last_boot_timestamp()
         if(self.model_name == "groq"):
             self.chat_model = Groq(api_key=os.environ['GROQ_KEY'])
@@ -145,19 +148,36 @@ class ChatModel():
                 print(f"Error during model response generation: {e}")
     
     async def speech(self, text=None):
+        sound_file = "voice.mp3"
+        
         if(self.model_name == 'c.ai'):
             chat_id = self.chat.chat_id
             voice_id = "9b961615-c541-496e-befd-d20b78c11167"
 
             speech = await self.chat_model.utils.generate_speech(chat_id, self.turn_id, self.candidate_id, voice_id)
 
-            sound_file = "voice.mp3"
-
             with open(sound_file, 'wb') as f:
                 f.write(speech)
-            
-            playsound(sound_file)
+
+        elif(self.model_name == 'groq' and text != None):
+            # This is temporary code until I found out how I want to do TTS. The voice is pretty realistic though
+            data = self.speech_client.tts.bytes(
+            model_id="sonic-english",
+            transcript=text,
+            voice_id="f9836c6e-a0bd-460e-9d3c-f7299fa60f94",
+            output_format={
+                "container": "mp3",
+                "encoding": "pcm_f32le",
+                "sample_rate": 44100,
+            },
+            )
+
+            with open(sound_file, "wb") as f:
+                f.write(data)
+        
+        if(text != None):
             try:
+                playsound(sound_file)
                 os.remove(sound_file)
             except FileNotFoundError:
                 print("File not found.")

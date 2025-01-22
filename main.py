@@ -41,8 +41,8 @@ async def main():
             if user_input != None:
                 assistant_reply = await chat.have_conversation(user_input)
                 print(f"[{AI_name}]:\n", assistant_reply)
-                if(chat_model == "c.ai"):
-                    await chat.speech()
+                if voice_activated:
+                    await chat.speech(assistant_reply)
 
     except QuitException: # Exit loop if user wants to end program
         pass
