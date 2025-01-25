@@ -28,10 +28,11 @@ chat_model = "groq"
 discord_token = os.environ['DISCORD_KEY']
 using_discord = False
 voice_activated = True
+quality_voice = False
 
 async def main():
     try:
-        chat = await ChatModel.create(chat_model, AI_name, using_discord)
+        chat = await ChatModel.create(chat_model, AI_name, using_discord, quality_voice)
         while True:
             if voice_activated:
                 user_input = await chat.record_audio()

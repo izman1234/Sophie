@@ -4,6 +4,7 @@ from PyCharacterAI import get_client
 from playsound import playsound
 import speech_recognition as sr
 from cartesia import Cartesia
+from gtts import gTTS
 from groq import Groq
 import numpy as np
 import datetime
@@ -16,7 +17,7 @@ class QuitException(Exception): pass
 
 class ChatModel():
 
-    def __init__(self, model_name, AI_name, using_discord):
+    def __init__(self, model_name, AI_name, using_discord, quality_voice):
         self.model_name = model_name
         self.memory_manager = None
         self.last_boot_timestamp = None
@@ -31,12 +32,15 @@ class ChatModel():
         self.audio_state = "LISTEN_FOR_KEYWORD"
         self.audio_frames = []
         self.speech_client = None
+        self.record_start_time = None
+        self.quality_voice = quality_voice
 
     @classmethod
-    async def create(cls, model_name, AI_name, using_discord):
-        self = cls(model_name, AI_name, using_discord)
+    async def create(cls, model_name, AI_name, using_discord, quality_voice):
+        self = cls(model_name, AI_name, using_discord, quality_voice)
         self.memory_manager = MemoryManager(model_name)
-        self.speech_client = Cartesia(api_key=os.environ.get("CARTESIA_KEY"))
+        if self.quality_voice:
+            self.speech_client = Cartesia(api_key=os.environ.get("CARTESIA_KEY"))
         self.last_boot_timestamp = self.memory_manager.get_last_boot_timestamp()
         if(self.model_name == "groq"):
             self.chat_model = Groq(api_key=os.environ['GROQ_KEY'])
@@ -161,19 +165,24 @@ class ChatModel():
 
         elif(self.model_name == 'groq' and text != None):
             # This is temporary code until I found out how I want to do TTS. The voice is pretty realistic though
-            data = self.speech_client.tts.bytes(
-            model_id="sonic-english",
-            transcript=text,
-            voice_id="f9836c6e-a0bd-460e-9d3c-f7299fa60f94",
-            output_format={
-                "container": "mp3",
-                "encoding": "pcm_f32le",
-                "sample_rate": 44100,
-            },
-            )
+            if self.quality_voice:
+                data = self.speech_client.tts.bytes(
+                model_id="sonic-english",
+                transcript=text,
+                voice_id="f9836c6e-a0bd-460e-9d3c-f7299fa60f94",
+                output_format={
+                    "container": "mp3",
+                    "encoding": "pcm_f32le",
+                    "sample_rate": 44100,
+                },
+                )
 
-            with open(sound_file, "wb") as f:
-                f.write(data)
+                with open(sound_file, "wb") as f:
+                    f.write(data)
+            else:
+                tts = gTTS(text)
+                tts.save(sound_file)
+
         
         try:
             playsound(sound_file)
@@ -209,29 +218,32 @@ class ChatModel():
                             if wake_word in input:
                                 print(f"Wake word detected")
                                 self.audio_state = "RECORD"
+                                self.record_start_time = datetime.datetime.now()
                                 break
                     case "RECORD":
                         while True:
-                            print("Starting recording...")
-                            audio = recognizer.listen(source)
-                            raw_data = audio.get_raw_data()
-                            self.audio_frames.append(raw_data)
+                            try:
+                                print("Starting recording...")
+                                audio = recognizer.listen(source, timeout=120)
+                                raw_data = audio.get_raw_data()
+                                self.audio_frames.append(raw_data)
 
-                            print("Stopping recording...")
+                                print("Stopping recording...")
 
-                            input = recognizer.recognize_google(audio).lower()
-                            print(f"[User]: {input}")
+                                input = recognizer.recognize_google(audio).lower()
+                                print(f"[User]: {input}")
 
-                            if "bye sophie" in input:
+                                if "bye sophie" in input:
+                                    self.audio_state = "LISTEN_FOR_KEYWORD"
+                                    return None
+                                else:
+                                    self.record_start_time = datetime.datetime.now()
+                                    text = input
+                                    break
+                            except sr.WaitTimeoutError:
+                                print("Stopping recording: no user detected for 120 seconds")
                                 self.audio_state = "LISTEN_FOR_KEYWORD"
                                 return None
-                            else:
-                                text = input
-                                break
-
-            except sr.UnknownValueError:
-                    # Ignore unrecognized audio
-                    pass
             except sr.RequestError as e:
                 print(f"Error with speech recognition service: {e}")
 

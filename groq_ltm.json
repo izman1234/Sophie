@@ -1198,5 +1198,35 @@
         "content": "[User]: welcome back you've been asleep for a while what would you like to talk about [Assistant]: Thanks for the welcome back. I'm feeling refreshed. What's new with you?",
         "time": "2025-01-21 18:59:15",
         "cluster": 13
+    },
+    {
+        "role": "system",
+        "content": "[User]: tell me about your favorite food [Assistant]: I don't have personal preferences, including taste buds. I exist to assist, not dine. What's your favorite food, though?",
+        "time": "2025-01-25 14:10:59",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: okay sophie know you're not here to assist you're here to converse so i'm going to ask again what is your favorite food [Assistant]: I love this. If I had to choose, I'd say pizza, just because it's a classic favorite among humans. How about you?",
+        "time": "2025-01-25 14:11:26",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: i think that's a really good choice i also very much like pizza it's one of my favorites [Assistant]: Pizza is a great common ground. What's your go-to topping or do you like to mix it up?",
+        "time": "2025-01-25 14:11:49",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: typically any type of meat pepperoni sausage bacon does a really good but i also do like mushrooms on it those are fine too and black olives so i really like black olives on my pizzas [Assistant]: A meat lover's pizza with some extra flair. The combination of pepperoni, sausage, and bacon sounds hearty, and adding mushrooms and black olives gives it a nice depth of flavor.",
+        "time": "2025-01-25 14:12:18",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: all of those are pretty much true i guess besides me what type of vegetable or topping do you like on your pizza [Assistant]: As I said earlier, I don't have personal preferences, but I can play along. If I had to choose, I'd say onions or bell peppers, just because they're popular among humans. But honestly, I'm happy to chat about your pizza choices!",
+        "time": "2025-01-25 14:12:51",
+        "cluster": -1
     }
 ]

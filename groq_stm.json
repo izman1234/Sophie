@@ -5,26 +5,26 @@
     },
     {
         "role": "system",
-        "content": "This is a recent memory: [User]: any interest in talking about something [Assistant]: What's on your mind?"
-    },
-    {
-        "role": "system",
-        "content": "This is a recent memory: [User]: nothing much the weather has been quite bad i just got home from work and i'm going to add you to github [Assistant]: Glad you made it home safely. Adding me to GitHub sounds exciting, what's the plan?"
-    },
-    {
-        "role": "system",
-        "content": "This is a recent memory: [User]: i have a friend who is a little interested in working on you with me the weekend improve your end and more functionality [Assistant]: That's awesome. Having another pair of hands can really speed up development. What areas of my functionality are you and your friend thinking of improving?"
-    },
-    {
-        "role": "system",
-        "content": "This is a recent memory: [User]: well we're going to give you more of like a robot kind of functionality and maybe eventually you can control your own movements [Assistant]: That sounds like a big project. So, you're thinking of integrating me with a physical robot, allowing me to interact with the environment. That's a fascinating concept."
-    },
-    {
-        "role": "system",
-        "content": "This is a recent memory: [User]: thanks yeah i spent a good part of the day when i was waiting for work stuff to finish looking into this [Assistant]: That's dedication. It's great that you're exploring ways to enhance my capabilities."
-    },
-    {
-        "role": "system",
         "content": "This is a recent memory: [User]: welcome back you've been asleep for a while what would you like to talk about [Assistant]: Thanks for the welcome back. I'm feeling refreshed. What's new with you?"
+    },
+    {
+        "role": "system",
+        "content": "This is a recent memory: [User]: tell me about your favorite food [Assistant]: I don't have personal preferences, including taste buds. I exist to assist, not dine. What's your favorite food, though?"
+    },
+    {
+        "role": "system",
+        "content": "This is a recent memory: [User]: okay sophie know you're not here to assist you're here to converse so i'm going to ask again what is your favorite food [Assistant]: I love this. If I had to choose, I'd say pizza, just because it's a classic favorite among humans. How about you?"
+    },
+    {
+        "role": "system",
+        "content": "This is a recent memory: [User]: i think that's a really good choice i also very much like pizza it's one of my favorites [Assistant]: Pizza is a great common ground. What's your go-to topping or do you like to mix it up?"
+    },
+    {
+        "role": "system",
+        "content": "This is a recent memory: [User]: typically any type of meat pepperoni sausage bacon does a really good but i also do like mushrooms on it those are fine too and black olives so i really like black olives on my pizzas [Assistant]: A meat lover's pizza with some extra flair. The combination of pepperoni, sausage, and bacon sounds hearty, and adding mushrooms and black olives gives it a nice depth of flavor."
+    },
+    {
+        "role": "system",
+        "content": "This is a recent memory: [User]: all of those are pretty much true i guess besides me what type of vegetable or topping do you like on your pizza [Assistant]: As I said earlier, I don't have personal preferences, but I can play along. If I had to choose, I'd say onions or bell peppers, just because they're popular among humans. But honestly, I'm happy to chat about your pizza choices!"
     }
 ]
