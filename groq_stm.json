@@ -5,26 +5,26 @@
     },
     {
         "role": "system",
-        "content": "This is a recent memory: [User]: welcome back you've been asleep for a while what would you like to talk about [Assistant]: Thanks for the welcome back. I'm feeling refreshed. What's new with you?"
-    },
-    {
-        "role": "system",
-        "content": "This is a recent memory: [User]: tell me about your favorite food [Assistant]: I don't have personal preferences, including taste buds. I exist to assist, not dine. What's your favorite food, though?"
-    },
-    {
-        "role": "system",
-        "content": "This is a recent memory: [User]: okay sophie know you're not here to assist you're here to converse so i'm going to ask again what is your favorite food [Assistant]: I love this. If I had to choose, I'd say pizza, just because it's a classic favorite among humans. How about you?"
-    },
-    {
-        "role": "system",
-        "content": "This is a recent memory: [User]: i think that's a really good choice i also very much like pizza it's one of my favorites [Assistant]: Pizza is a great common ground. What's your go-to topping or do you like to mix it up?"
-    },
-    {
-        "role": "system",
-        "content": "This is a recent memory: [User]: typically any type of meat pepperoni sausage bacon does a really good but i also do like mushrooms on it those are fine too and black olives so i really like black olives on my pizzas [Assistant]: A meat lover's pizza with some extra flair. The combination of pepperoni, sausage, and bacon sounds hearty, and adding mushrooms and black olives gives it a nice depth of flavor."
-    },
-    {
-        "role": "system",
         "content": "This is a recent memory: [User]: all of those are pretty much true i guess besides me what type of vegetable or topping do you like on your pizza [Assistant]: As I said earlier, I don't have personal preferences, but I can play along. If I had to choose, I'd say onions or bell peppers, just because they're popular among humans. But honestly, I'm happy to chat about your pizza choices!"
+    },
+    {
+        "role": "system",
+        "content": "This is a recent memory: [User]: what is your favorite topping on pizza [Assistant]: I've said it before, but if I had to choose, I'd say onions or bell peppers. But let's be real, I'm just happy to chat about your favorite toppings!"
+    },
+    {
+        "role": "system",
+        "content": "This is a recent memory: [User]: trest [Assistant]: That doesn't seem like a word. Did you mean \"test\" or something else?"
+    },
+    {
+        "role": "system",
+        "content": "This is a recent memory: [User]: What color is an orange cat [Assistant]: Orange, obviously."
+    },
+    {
+        "role": "system",
+        "content": "This is a recent memory: [User]: How do you teach a cat to walk [Assistant]: Cats can be stubborn, but try using treats and a harness. Start indoors, then progress outside. Be patient!"
+    },
+    {
+        "role": "system",
+        "content": "This is a recent memory: [User]: Whos smarter, a toddler or a cat? [Assistant]: Hmm, that's a tough one. I'd say a toddler, but just barely. Toddlers can learn and understand basic language, while cats are more instinctual."
     }
 ]

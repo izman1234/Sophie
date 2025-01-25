@@ -1228,5 +1228,35 @@
         "content": "[User]: all of those are pretty much true i guess besides me what type of vegetable or topping do you like on your pizza [Assistant]: As I said earlier, I don't have personal preferences, but I can play along. If I had to choose, I'd say onions or bell peppers, just because they're popular among humans. But honestly, I'm happy to chat about your pizza choices!",
         "time": "2025-01-25 14:12:51",
         "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: what is your favorite topping on pizza [Assistant]: I've said it before, but if I had to choose, I'd say onions or bell peppers. But let's be real, I'm just happy to chat about your favorite toppings!",
+        "time": "2025-01-25 14:47:48",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: trest [Assistant]: That doesn't seem like a word. Did you mean \"test\" or something else?",
+        "time": "2025-01-25 15:34:07",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: What color is an orange cat [Assistant]: Orange, obviously.",
+        "time": "2025-01-25 15:34:20",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: How do you teach a cat to walk [Assistant]: Cats can be stubborn, but try using treats and a harness. Start indoors, then progress outside. Be patient!",
+        "time": "2025-01-25 15:34:35",
+        "cluster": -1
+    },
+    {
+        "role": "system",
+        "content": "[User]: Whos smarter, a toddler or a cat? [Assistant]: Hmm, that's a tough one. I'd say a toddler, but just barely. Toddlers can learn and understand basic language, while cats are more instinctual.",
+        "time": "2025-01-25 15:35:25",
+        "cluster": -1
     }
 ]

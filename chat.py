@@ -205,21 +205,24 @@ class ChatModel():
                     case "LISTEN_FOR_KEYWORD":
                         #print("Listening for the wake word...")
                         while True:
-                            # Listen for audio input
-                            audio = recognizer.listen(source)
+                            try:
+                                # Listen for audio input
+                                audio = recognizer.listen(source)
 
-                            # Convert audio to text
-                            input = recognizer.recognize_google(audio).lower()
+                                # Convert audio to text
+                                input = recognizer.recognize_google(audio).lower()
 
-                            if input in ['exit', 'quit']:
-                                return "quit"
-                        
-                            # Check for the wake word
-                            if wake_word in input:
-                                print(f"Wake word detected")
-                                self.audio_state = "RECORD"
-                                self.record_start_time = datetime.datetime.now()
-                                break
+                                if input in ['exit', 'quit']:
+                                    return "quit"
+                            
+                                # Check for the wake word
+                                if wake_word in input:
+                                    print(f"Wake word detected")
+                                    self.audio_state = "RECORD"
+                                    self.record_start_time = datetime.datetime.now()
+                                    break
+                            except sr.UnknownValueError:
+                                pass
                     case "RECORD":
                         while True:
                             try:
@@ -244,6 +247,8 @@ class ChatModel():
                                 print("Stopping recording: no user detected for 120 seconds")
                                 self.audio_state = "LISTEN_FOR_KEYWORD"
                                 return None
+                            except sr.UnknownValueError:
+                                pass
             except sr.RequestError as e:
                 print(f"Error with speech recognition service: {e}")
 

@@ -37,7 +37,7 @@ async def main():
             if voice_activated:
                 user_input = await chat.record_audio()
             else:
-            # Get user input
+                # Get user input
                 user_input = input("[YOU]:\n")
             if user_input != None:
                 assistant_reply = await chat.have_conversation(user_input)
