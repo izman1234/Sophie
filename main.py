@@ -24,26 +24,34 @@ if sys.platform == 'win32':
 load_dotenv()
 
 AI_name = "Sophie"
-chat_model = "groq"
+chat_model = "groq" # Options are: groq or c.ai
 discord_token = os.environ['DISCORD_KEY']
 using_discord = False
 voice_activated = True
 quality_voice = False
+global main_state
 
 async def main():
     try:
+        main_state = "CONVERSATION"
         chat = await ChatModel.create(chat_model, AI_name, using_discord, quality_voice)
         while True:
-            if voice_activated:
-                user_input = await chat.record_audio()
-            else:
-                # Get user input
-                user_input = input("[YOU]:\n")
-            if user_input != None:
-                assistant_reply = await chat.have_conversation(user_input)
-                print(f"[{AI_name}]:\n", assistant_reply)
-                if voice_activated:
-                    await chat.speech(assistant_reply)
+            match main_state:
+                case "CONVERSATION":
+                    if voice_activated:
+                        user_input, main_state = await chat.record_audio()
+                    else:
+                        # Get user input
+                        user_input = input("[YOU]:\n")
+                    if user_input != None:
+                        assistant_reply = await chat.have_conversation(user_input)
+                        print(f"[{AI_name}]:\n", assistant_reply)
+                        if voice_activated:
+                            await chat.speech(assistant_reply)
+                case "COMMAND":
+                    # Temporary for now until there is something to actually do in this state
+                    print("Command State")
+                    main_state = "CONVERSATION"
 
     except QuitException: # Exit loop if user wants to end program
         pass

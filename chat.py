@@ -32,7 +32,6 @@ class ChatModel():
         self.audio_state = "LISTEN_FOR_KEYWORD"
         self.audio_frames = []
         self.speech_client = None
-        self.record_start_time = None
         self.quality_voice = quality_voice
 
     @classmethod
@@ -195,6 +194,7 @@ class ChatModel():
         microphone = sr.Microphone()
 
         text = None
+        main_state = "CONVERSATION"
 
         with microphone as source:
             recognizer.adjust_for_ambient_noise(source)
@@ -213,13 +213,12 @@ class ChatModel():
                                 input = recognizer.recognize_google(audio).lower()
 
                                 if input in ['exit', 'quit']:
-                                    return "quit"
+                                    return "quit", "CONVERSATION"
                             
                                 # Check for the wake word
                                 if wake_word in input:
                                     print(f"Wake word detected")
                                     self.audio_state = "RECORD"
-                                    self.record_start_time = datetime.datetime.now()
                                     break
                             except sr.UnknownValueError:
                                 pass
@@ -234,22 +233,25 @@ class ChatModel():
                                 print("Stopping recording...")
 
                                 input = recognizer.recognize_google(audio).lower()
-                                print(f"[User]: {input}")
 
-                                if "bye sophie" in input:
+                                if "bye sophie" in input: # Exit word detected
                                     self.audio_state = "LISTEN_FOR_KEYWORD"
-                                    return None
+                                    break
+                                elif input == "command": # Make sure the sentence doesn't just include command, but only is the word command
+                                    self.audio_state = "LISTEN_FOR_KEYWORD" # Go back to waiting for wake word after command has finished being executed
+                                    main_state = "COMMAND"
+                                    break
                                 else:
-                                    self.record_start_time = datetime.datetime.now()
+                                    print(f"[User]: {input}")
                                     text = input
                                     break
                             except sr.WaitTimeoutError:
                                 print("Stopping recording: no user detected for 120 seconds")
                                 self.audio_state = "LISTEN_FOR_KEYWORD"
-                                return None
+                                break
                             except sr.UnknownValueError:
                                 pass
             except sr.RequestError as e:
                 print(f"Error with speech recognition service: {e}")
 
-        return text
+        return text, main_state

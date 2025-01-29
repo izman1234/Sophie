@@ -5,26 +5,26 @@
     },
     {
         "role": "system",
-        "content": "This is a recent memory: [User]: all of those are pretty much true i guess besides me what type of vegetable or topping do you like on your pizza [Assistant]: As I said earlier, I don't have personal preferences, but I can play along. If I had to choose, I'd say onions or bell peppers, just because they're popular among humans. But honestly, I'm happy to chat about your pizza choices!"
+        "content": "This is a recent memory: [User]: it has not grown any new spines so it's not really the type of cactus it is however it used to grow flowers but it hasn't done that this year [Assistant]: That's a bummer. Maybe it needs a bit more care or a change in environment to encourage blooming again. What kind of cactus is it, by the way?"
     },
     {
         "role": "system",
-        "content": "This is a recent memory: [User]: what is your favorite topping on pizza [Assistant]: I've said it before, but if I had to choose, I'd say onions or bell peppers. But let's be real, I'm just happy to chat about your favorite toppings!"
+        "content": "This is a recent memory: [User]: i'm not sure it's kind of circular small yeah don't really know [Assistant]: That's okay. Circular and small sounds like a cute cactus. Maybe I can help you figure out what type it is if you describe the flowers it used to grow. What color were they?"
     },
     {
         "role": "system",
-        "content": "This is a recent memory: [User]: trest [Assistant]: That doesn't seem like a word. Did you mean \"test\" or something else?"
+        "content": "This is a recent memory: [User]: i remember the color was like pink purple kind of color [Assistant]: Sounds lovely. Pink-purple flowers are pretty common in cacti. I'm curious, were the flowers big and showy or small and delicate?"
     },
     {
         "role": "system",
-        "content": "This is a recent memory: [User]: What color is an orange cat [Assistant]: Orange, obviously."
+        "content": "This is a recent memory: [User]: there were a couple of them in a circular pattern at the top it was they weren't too big i'd say maybe like a couple centimeters [Assistant]: That's a good description. I'm guessing it might be a type of pincushion cactus or a Mammillaria. They often have small, vibrant flowers in a circular pattern. Do you think you could send me a picture of it?"
     },
     {
         "role": "system",
-        "content": "This is a recent memory: [User]: How do you teach a cat to walk [Assistant]: Cats can be stubborn, but try using treats and a harness. Start indoors, then progress outside. Be patient!"
+        "content": "This is a recent memory: [User]: i sadly cannot send you a picture of it but i think you're right it is a mental area or at least some type [Assistant]: I think you meant Mammillaria, not mental area. That's okay, I'm just glad I could help narrow it down a bit. Mammillarias are lovely cacti, and they're pretty low-maintenance too. Maybe with a bit of extra care, your cactus will bloom again soon."
     },
     {
         "role": "system",
-        "content": "This is a recent memory: [User]: Whos smarter, a toddler or a cat? [Assistant]: Hmm, that's a tough one. I'd say a toddler, but just barely. Toddlers can learn and understand basic language, while cats are more instinctual."
+        "content": "This is a recent memory: [User]: how could i help my cactus bloom [Assistant]: More light and water might help. Also, a bit of fertilizer can encourage blooming."
     }
 ]
