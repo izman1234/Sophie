@@ -1,0 +1,6 @@
+{
+    "model_name": "groq",
+    "using_discord": false,
+    "voice_activated": true,
+    "quality_voice": false
+}

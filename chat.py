@@ -6,6 +6,7 @@ import speech_recognition as sr
 from cartesia import Cartesia
 from gtts import gTTS
 from groq import Groq
+import settings as s
 import numpy as np
 import datetime
 import asyncio
@@ -17,8 +18,7 @@ class QuitException(Exception): pass
 
 class ChatModel():
 
-    def __init__(self, model_name, AI_name, using_discord, quality_voice):
-        self.model_name = model_name
+    def __init__(self, AI_name):
         self.memory_manager = None
         self.last_boot_timestamp = None
         self.chat_model = None
@@ -27,42 +27,40 @@ class ChatModel():
         self.chat = None
         self.turn_id = None
         self.candidate_id = None
-        self.using_discord = using_discord
         self.greeting_message = None
         self.audio_state = "LISTEN_FOR_KEYWORD"
         self.audio_frames = []
         self.speech_client = None
-        self.quality_voice = quality_voice
 
     @classmethod
-    async def create(cls, model_name, AI_name, using_discord, quality_voice):
-        self = cls(model_name, AI_name, using_discord, quality_voice)
-        self.memory_manager = MemoryManager(model_name)
-        if self.quality_voice:
+    async def create(cls, AI_name):
+        self = cls(AI_name)
+        self.memory_manager = MemoryManager(s.model_name)
+        if s.quality_voice:
             self.speech_client = Cartesia(api_key=os.environ.get("CARTESIA_KEY"))
         self.last_boot_timestamp = self.memory_manager.get_last_boot_timestamp()
-        if(self.model_name == "groq"):
+        if(s.model_name == "groq"):
             self.chat_model = Groq(api_key=os.environ['GROQ_KEY'])
-        elif(self.model_name == 'c.ai'):
+        elif(s.model_name == 'c.ai'):
             self.chat_model = await get_client(token=os.environ['CHARACTER_KEY'])
             self.character_id = "1j0SUtg4YHXM1HkKYFq9gX69ObZtrS5cEOt-wTOnvWU"
             if os.path.exists("c.ai_chat_id.txt"):
                 with open("c.ai_chat_id.txt", "r") as f:
                     fetched_chat = f.readline().strip()
                     self.last_message = f.read().strip()
-                if not self.using_discord:
+                if not s.using_discord:
                     print(f"[Sophie]: {self.last_message}")
                 self.chat = await self.chat_model.chat.fetch_chat(fetched_chat)
             else:
                 self.chat, greeting_message = await self.chat_model.chat.create_chat(self.character_id)
                 self.greeting_message = greeting_message
-                if not self.using_discord:
+                if not s.using_discord:
                     print(f"[Sophie]: {greeting_message.get_primary_candidate().text}")
-        elif(self.model_name == 'chatgpt'):
+        elif(s.model_name == 'chatgpt'):
             pass
 
         # Check if last_boot_timestamp exists and generate a message for Sophie
-        if(self.model_name == "groq"):
+        if(s.model_name == "groq"):
             if self.last_boot_timestamp:
                 time_diff = datetime.datetime.now() - self.last_boot_timestamp
                 minutes_since_last_boot = int(time_diff.total_seconds() // 60)  # Convert seconds to minutes
@@ -81,7 +79,7 @@ class ChatModel():
                 # Get and display the assistant's response
                 assistant_reply = time_diff_reply.choices[0].message.content
                 self.greeting_message = assistant_reply
-                if not self.using_discord:
+                if not s.using_discord:
                     print(f"[{AI_name}]:\n", assistant_reply)
         return self
     
@@ -89,18 +87,18 @@ class ChatModel():
         return self.greeting_message
 
     async def close(self):
-        if self.model_name == 'c.ai' and hasattr(self.chat_model, "session"):
+        if s.model_name == 'c.ai' and hasattr(self.chat_model, "session"):
             await self.chat_model.close_session()
     
     async def have_conversation(self, user_input, username="User"):
-        if user_input.lower() in ['exit', 'quit'] and self.using_discord == False:
+        if user_input.lower() in ['exit', 'quit'] and s.using_discord == False:
             try:
-                if(self.model_name == "c.ai"):
+                if(s.model_name == "c.ai"):
                     with open("c.ai_chat_id.txt", "w") as f:
                         f.write(str(self.chat.chat_id))
                         f.write('\n')
                         f.write(self.last_message)
-                elif(self.model_name == "groq"):
+                elif(s.model_name == "groq"):
                     # Save short memory to a file
                     self.memory_manager.force_save_ltm()
                     self.memory_manager.force_save_stm()
@@ -118,7 +116,7 @@ class ChatModel():
             raise QuitException
         else:
             try:
-                if(self.model_name == "groq"):
+                if(s.model_name == "groq"):
                     # Generate a response
                     chat_completion = self.chat_model.chat.completions.create(
                         messages= self.memory_manager.get_relevant_memories(user_input),
@@ -131,7 +129,7 @@ class ChatModel():
                     assistant_reply = chat_completion.choices[0].message.content
                     self.memory_manager.save_reply(user_input, assistant_reply, username)
                 
-                elif(self.model_name == "c.ai"):
+                elif(s.model_name == "c.ai"):
                     answer = await self.chat_model.chat.send_message(self.character_id, self.chat.chat_id, user_input, streaming=True)
 
                     assistant_reply = ""
@@ -153,7 +151,7 @@ class ChatModel():
     async def speech(self, text=None):
         sound_file = "voice.mp3"
         
-        if(self.model_name == 'c.ai'):
+        if(s.model_name == 'c.ai'):
             chat_id = self.chat.chat_id
             voice_id = "9b961615-c541-496e-befd-d20b78c11167"
 
@@ -162,9 +160,9 @@ class ChatModel():
             with open(sound_file, 'wb') as f:
                 f.write(speech)
 
-        elif(self.model_name == 'groq' and text != None):
+        elif(s.model_name == 'groq' and text != None):
             # This is temporary code until I found out how I want to do TTS. The voice is pretty realistic though
-            if self.quality_voice:
+            if s.quality_voice:
                 data = self.speech_client.tts.bytes(
                 model_id="sonic-english",
                 transcript=text,
@@ -203,54 +201,52 @@ class ChatModel():
             try:
                 match self.audio_state:
                     case "LISTEN_FOR_KEYWORD":
-                        #print("Listening for the wake word...")
-                        while True:
-                            try:
-                                # Listen for audio input
-                                audio = recognizer.listen(source)
+                        try:
+                            print("Listening for the wake word...")
+                            # Listen for audio input
+                            audio = recognizer.listen(source)
 
-                                # Convert audio to text
-                                input = recognizer.recognize_google(audio).lower()
+                            # Convert audio to text
+                            input = recognizer.recognize_google(audio).lower()
 
-                                if input in ['exit', 'quit']:
-                                    return "quit", "CONVERSATION"
-                            
-                                # Check for the wake word
-                                if wake_word in input:
-                                    print(f"Wake word detected")
-                                    self.audio_state = "RECORD"
-                                    break
-                            except sr.UnknownValueError:
-                                pass
+                            if input in ['exit', 'quit']:
+                                return "quit", "CONVERSATION"
+                        
+                            # Check for the wake word
+                            if wake_word in input:
+                                print(f"Wake word detected")
+                                self.audio_state = "RECORD"
+
+                        except sr.UnknownValueError:
+                            pass
                     case "RECORD":
-                        while True:
-                            try:
-                                print("Starting recording...")
-                                audio = recognizer.listen(source, timeout=120)
-                                raw_data = audio.get_raw_data()
-                                self.audio_frames.append(raw_data)
+                        try:
+                            print("Starting recording...")
+                            audio = recognizer.listen(source, timeout=120)
+                            raw_data = audio.get_raw_data()
+                            self.audio_frames.append(raw_data)
 
-                                print("Stopping recording...")
+                            print("Stopping recording...")
 
-                                input = recognizer.recognize_google(audio).lower()
+                            input = recognizer.recognize_google(audio).lower()
 
-                                if "bye sophie" in input: # Exit word detected
-                                    self.audio_state = "LISTEN_FOR_KEYWORD"
-                                    break
-                                elif input == "command": # Make sure the sentence doesn't just include command, but only is the word command
-                                    self.audio_state = "LISTEN_FOR_KEYWORD" # Go back to waiting for wake word after command has finished being executed
-                                    main_state = "COMMAND"
-                                    break
-                                else:
-                                    print(f"[User]: {input}")
-                                    text = input
-                                    break
-                            except sr.WaitTimeoutError:
-                                print("Stopping recording: no user detected for 120 seconds")
+                            if "bye sophie" in input: # Exit word detected
                                 self.audio_state = "LISTEN_FOR_KEYWORD"
-                                break
-                            except sr.UnknownValueError:
-                                pass
+
+                            elif input == "command": # Make sure the sentence doesn't just include command, but only is the word command
+                                self.audio_state = "LISTEN_FOR_KEYWORD" # Go back to waiting for wake word after command has finished being executed
+                                main_state = "COMMAND"
+
+                            else:
+                                print(f"[User]: {input}")
+                                text = input
+
+                        except sr.WaitTimeoutError:
+                            print("Stopping recording: no user detected for 120 seconds")
+                            self.audio_state = "LISTEN_FOR_KEYWORD"
+
+                        except sr.UnknownValueError:
+                            pass
             except sr.RequestError as e:
                 print(f"Error with speech recognition service: {e}")
 

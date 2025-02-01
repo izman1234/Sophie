@@ -2,8 +2,9 @@ from chat import ChatModel, QuitException
 from discord_wrapper import DiscordClient
 from dotenv import load_dotenv
 from groq import Groq
-import discord
+import settings as s
 import warnings
+import discord
 import asyncio
 import sys
 import os
@@ -23,22 +24,20 @@ if sys.platform == 'win32':
 
 load_dotenv()
 
-AI_name = "Sophie"
-chat_model = "groq" # Options are: groq or c.ai
-discord_token = os.environ['DISCORD_KEY']
-using_discord = False
-voice_activated = True
-quality_voice = False
 global main_state
+AI_name = "Sophie"
+discord_token = os.environ['DISCORD_KEY']
+
+s.global_init()
 
 async def main():
     try:
         main_state = "CONVERSATION"
-        chat = await ChatModel.create(chat_model, AI_name, using_discord, quality_voice)
+        chat = await ChatModel.create(AI_name)
         while True:
             match main_state:
                 case "CONVERSATION":
-                    if voice_activated:
+                    if s.voice_activated:
                         user_input, main_state = await chat.record_audio()
                     else:
                         # Get user input
@@ -46,7 +45,7 @@ async def main():
                     if user_input != None:
                         assistant_reply = await chat.have_conversation(user_input)
                         print(f"[{AI_name}]:\n", assistant_reply)
-                        if voice_activated:
+                        if s.voice_activated:
                             await chat.speech(assistant_reply)
                 case "COMMAND":
                     # Temporary for now until there is something to actually do in this state
@@ -60,11 +59,13 @@ def run_discord_mode():
     intents = discord.Intents.default()
     intents.message_content = True
     discord_client = DiscordClient(intents=intents)
-    discord_client.initialize(chat_model, AI_name)
+    discord_client.initialize(s.model_name, AI_name)
     discord_client.run(discord_token)
 
 if __name__ == "__main__":
-    if using_discord:
+    if s.using_discord:
         run_discord_mode()
     else:
         asyncio.run(main())
+
+    s.global_save()
